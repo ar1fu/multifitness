@@ -19,6 +19,12 @@ nav{
     justify-content: space-between;
 }
 
+nav h4{
+    font-family:Stick No Bills;
+    color:#fff;
+    font-size:2rem;
+}
+
 nav .logo a{
     width:20%;
 }
@@ -106,12 +112,20 @@ nav ul li a:hover{
         font-size:0.8rem;
     }
 
+    nav{
+        display:block;
+    }
+
     nav ul li{
         display:none;
     }
 
     nav .logo{
         width:100%;
+    }
+
+    nav h4{
+        text-align: center;
     }
 }
 
