@@ -19,8 +19,12 @@ nav{
     justify-content: space-between;
 }
 
-nav .logo{
+nav .logo a{
     width:20%;
+}
+
+nav .logo:hover{
+    cursor:pointer;
 }
 
 nav ul li{
