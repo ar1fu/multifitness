@@ -123,6 +123,7 @@ nav ul .close-menu{
     nav{
         display:flex;
         justify-content: space-between;
+        padding:0.6rem;
     }
 
     nav .logo{
@@ -135,7 +136,7 @@ nav ul .close-menu{
         top:0;
         right:0;
         left:0;
-        z-index:10;
+        z-index:9999;
         flex-direction:column;
         justify-content:center;
         align-items:center;
