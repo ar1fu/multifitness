@@ -136,11 +136,11 @@ nav ul .close-menu{
         top:0;
         right:0;
         left:0;
-        z-index:9999;
+        z-index:10;
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        transition: top 1s ease 0s;
+        transition: top 1s ease 0.1s;
         display:none;
         background:hsl(0 0% 100% / 0.1);
         backdrop-filter: blur(1rem);
