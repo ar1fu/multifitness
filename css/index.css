@@ -19,27 +19,22 @@ nav{
     justify-content: space-between;
 }
 
-nav h4{
-    font-family:Stick No Bills;
-    color:#fff;
-    font-size:2rem;
-}
-
-nav .logo a{
-    width:20%;
+nav .logo{
+    width:60%;
 }
 
 nav .logo:hover{
     cursor:pointer;
 }
 
-nav ul li{
+nav ul{
+    display:flex;
     list-style:none;
-    display:inline-block;
-    margin:0.4rem;
 }
 
 nav ul li a{
+    display:inline-block;
+    margin:0.4rem;
     text-decoration:none;
     color:#fff;
     transition:padding 0.2s;
@@ -48,6 +43,19 @@ nav ul li a{
 nav ul li a:hover{
     color:yellowgreen;
     padding:0 0.6em;
+}
+
+nav .open-menu{
+    font-size:2rem;
+    margin:1.2rem;
+    display:none;
+    cursor:pointer;
+}
+
+nav ul .close-menu{
+    font-size:2rem;
+    display:none;
+    cursor:pointer;
 }
 
 .title{
@@ -113,19 +121,43 @@ nav ul li a:hover{
     }
 
     nav{
-        display:block;
-    }
-
-    nav ul li{
-        display:none;
+        display:flex;
+        justify-content: space-between;
     }
 
     nav .logo{
-        width:100%;
+        width:60%;
     }
 
-    nav h4{
-        text-align: center;
+    nav ul{
+        height:100vh;
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+        z-index:10;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        transition: top 1s ease 0s;
+        display:none;
+        background:hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+
+    nav ul .close-menu{
+        display:block;
+        position:absolute;
+        top:1.2rem;
+        right:1.2rem;
+        color:#fff;
+    }
+
+    nav .open-menu{
+        display:inline-block;
+        justify-content: center;
+        margin:0;
+        color:#fff;
     }
 }
 

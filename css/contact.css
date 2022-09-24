@@ -26,6 +26,15 @@
 form input{
     width:50%;
     line-height:2rem;
+    margin:0.4rem 0;
+}
+
+form textarea{
+    margin:0.4rem 0;
+}
+
+form label{
+    line-height:2rem;
 }
 
 form textarea{
