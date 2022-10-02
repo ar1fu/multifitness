@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <div class="title">
+                    <div>
+                        <h1>Book Now</h1>
+                        <p>Any inquiries? Contact us!</p>
+                    </div>
+                    <div class="btn-form">
+                        <p>Want to change your book date? Click here!</p>
+                        <form method="post" action="find.php">
+                            <button class="button" type="submit" name="edit" value="edit">Edit</button>
+                        </form>
+                    </div>
+                    <div class="btn-form">
+                        <p>Want to change your book date? Click here!</p>
+                        <form method="post" action="find.php">
+                            <button class="button" type="submit" name="delete" value="delete">Delete</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="form">
+                    <form method="post" action="book.php">
+                        <div>
+                            <label for="email">Email Address</label><br>
+                            <input type ="text" class= "form-control" name ="email" required><br>
+                        </div>
+                        
+                        <div>
+                            <label for="name">Name</label><br>
+                            <input type ="text" class= "form-control" name="name" required><br>
+                        </div>
+                        
+                        <div>
+                            <label for="phone">Phone number</label><br>
+                            <input type ="tel" class= "form-control" name="phone" maxlength ="12"><br>
+                        </div>
+                        
+                        <div>
+                            <label for="sport">Sport</label><br>
+                            <select name="sport" class= "form-control">
+                            <option value="Badminton">Badminton</option>
+                            <option value="Futsal">Futsal</option>
+                            </select><br>
+                        </div>
+                        
+                        <div>
+                            <label for="Location">Location</label><br>
+                            <select name ="location" class= "form-control">
+                            <option value="MSN Wangsa Maju">MSN Wangsa Maju</option>
+                            <option value="SLK Setapak">SLK Badminton Centre</option>
+                            </select><br>
+                        </div>
+                        
+                        <div>
+                            <label for="date">Date</label><br>
+                            <input type="date" class= "form-control" name="date" required><br>
+                        </div>
+                        
+                        <div>
+                            <button class="button" type="submit" value="Book">Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
